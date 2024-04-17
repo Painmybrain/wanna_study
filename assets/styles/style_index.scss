@@ -106,3 +106,28 @@ body {
     text-decoration: none;
     border-radius: 60px;
 }
+
+// Раздел "Акции"
+.promo{
+    font-family: Montserat-medium;
+    padding-left: 5%;
+
+}
+.promo__title{
+    color: rgba(22, 119, 189, 1);
+    padding-top: 15%;
+    padding-bottom: 5%;
+    font-weight: 600;
+    font-size: 70px;
+}
+.promo__maintext-first{
+    font-size: 55px;
+    line-height:normal;
+
+
+}
+.promo__maintext-second{
+    font-size: 55px;
+    padding-top: 5%;
+    line-height:normal;
+}
