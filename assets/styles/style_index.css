@@ -2,8 +2,106 @@
   font-family: Montserrat-Regular;
   src: url(../fonts/Montserrat-Regular.ttf);
 }
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url(../fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: Montserrat-SemiBoldItalic;
+  src: url(../fonts/Montserrat-SemiBoldItalic.ttf);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background: rgb(249, 249, 249);
+}
+
+.directions {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.directions__title {
+  margin-top: 142px;
+  margin-bottom: 72px;
+  color: rgb(22, 119, 189);
+  font-family: Montserrat-Regular;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 112px;
+}
+
+.directions__cards {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.card__1 {
+  background-color: rgb(31, 180, 122);
+  max-width: 530px;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.card__title {
+  margin-top: 13px;
+  margin-bottom: 35px;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat-Regular;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.card__text {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat-Regular;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 33px;
+}
+
+.card__title-2 {
+  margin-top: 35px;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat-Bold;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 33px;
+}
+
+.card__2 {
+  background-color: rgb(241, 117, 168);
+  max-width: 530px;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.directions__btn {
+  margin-top: 20px;
+}
+
+.signup__btn {
+  background-color: rgb(251, 221, 41);
+  color: rgb(22, 119, 189);
+  font-family: Montserrat-Medium;
+  font-size: 50px;
+  padding: 25px 30px;
+  text-decoration: none;
+  border-radius: 60px;
 }/*# sourceMappingURL=style_index.css.map */
