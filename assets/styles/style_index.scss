@@ -109,7 +109,7 @@ body {
 
 // Раздел "Акции"
 .promo{
-    font-family: Montserat-medium;
+    font-family: Montserrat-Regular;
     padding-left: 5%;
 
 }
@@ -124,10 +124,12 @@ body {
     font-size: 55px;
     line-height:normal;
 
-
 }
 .promo__maintext-second{
     font-size: 55px;
     padding-top: 5%;
     line-height:normal;
+}
+.maintext__bold{
+    font-family: Montserrat-SemiBold;
 }
