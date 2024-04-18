@@ -18,6 +18,10 @@
   font-family: Montserrat-SemiBoldItalic;
   src: url(../fonts/Montserrat-SemiBoldItalic.ttf);
 }
+@font-face {
+  font-family: Montserrat-ExtraBold;
+  src: url(../fonts/Montserrat-ExtraBold.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -25,10 +29,13 @@
 }
 
 body {
-  background: rgb(249, 249, 249);
+  background-color: rgb(249, 249, 249);
+  display: flex;
+  justify-content: center;
 }
 
 .directions {
+  max-width: 1696px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -38,7 +45,7 @@ body {
   margin-top: 142px;
   margin-bottom: 72px;
   color: rgb(22, 119, 189);
-  font-family: Montserrat-Regular;
+  font-family: Montserrat-SemiBold;
   font-weight: 600;
   font-size: 70px;
   line-height: 112px;
@@ -49,51 +56,55 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-}
-
-.card__1 {
-  background-color: rgb(31, 180, 122);
-  max-width: 530px;
-  border-radius: 20px;
-  padding: 30px;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
 }
 
 .card__title {
   margin-top: 13px;
   margin-bottom: 35px;
-  color: rgb(255, 255, 255);
-  font-family: Montserrat-Regular;
-  font-weight: 600;
+  font-family: Montserrat-SemiBold;
   font-size: 30px;
-  line-height: 30px;
 }
 
 .card__text {
-  color: rgb(255, 255, 255);
-  font-family: Montserrat-Regular;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 33px;
+  font-family: Montserrat-SemiBold;
+  font-size: 30px;
 }
 
 .card__title-2 {
   margin-top: 35px;
-  color: rgb(255, 255, 255);
-  font-family: Montserrat-Bold;
-  font-weight: 800;
-  font-size: 25px;
-  line-height: 33px;
+  font-family: Montserrat-ExtraBold;
+  font-size: 30px;
 }
 
-.card__2 {
+.card__1, .card__5 {
+  background-color: rgb(31, 180, 122);
+  max-width: 530px;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 24px;
+}
+
+.card__2, .card__6 {
   background-color: rgb(241, 117, 168);
   max-width: 530px;
   border-radius: 20px;
   padding: 30px;
+  margin-bottom: 24px;
+}
+
+.card__3, .card__4 {
+  background-color: #70C7E3;
+  max-width: 530px;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 24px;
 }
 
 .directions__btn {
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .signup__btn {
@@ -218,7 +229,7 @@ body {
 }
 
 .promo {
-  font-family: Montserat-medium;
+  font-family: Montserrat-Regular;
   padding-left: 5%;
 }
 
@@ -239,4 +250,8 @@ body {
   font-size: 55px;
   padding-top: 5%;
   line-height: normal;
+}
+
+.maintext__bold {
+  font-family: Montserrat-SemiBold;
 }/*# sourceMappingURL=style_index.css.map */
