@@ -267,4 +267,19 @@ body {
 
 .maintext__bold {
   font-family: Montserrat-SemiBold;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.contacts__adress {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  height: 48%;
 }/*# sourceMappingURL=style_index.css.map */

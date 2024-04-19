@@ -227,6 +227,7 @@ body {
 }
 
 // Раздел "Акции"
+
 .promo{
     font-family: Montserrat-Regular;
     padding-left: 5%;
@@ -263,4 +264,20 @@ body {
 }
 .maintext__bold{
     font-family: Montserrat-SemiBold;
+}
+
+// Раздел "Контакты"
+.contacts{
+    display: flex;
+    flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.contacts__adress
+{
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+	height: 48%;
 }
