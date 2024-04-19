@@ -227,6 +227,7 @@ body {
 }
 
 // Раздел "Акции"
+
 .promo{
     font-family: Montserrat-Regular;
     padding-left: 5%;
@@ -263,4 +264,47 @@ body {
 }
 .maintext__bold{
     font-family: Montserrat-SemiBold;
+}
+
+// Раздел "Контакты"
+.contacts{
+    display: flex;
+    flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+    padding-top: 5%;
+}
+.contacts__title
+{
+    font-family: Montserrat-SemiBold;
+    color:rgba(22, 119, 189, 1);
+    padding-bottom: 3%;
+    font-size:70px;
+
+}
+.contacts__adress
+{
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+	height: 48%;
+    padding-left: 10%;
+}
+.contacts__map
+{
+    margin-left: 4%;
+    padding-top: 7%;
+
+}
+
+.contacts__adress-titles{
+    font-family: Montserrat-SemiBold;
+    color:rgb(7, 7, 7);
+    font-size: 50px;
+}
+.contacts__adress-main{
+    font-family: Montserrat-SemiBold;
+    color:rgb(7, 7, 7);
+    font-size: 35px;
 }
