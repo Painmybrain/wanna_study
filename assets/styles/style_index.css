@@ -274,6 +274,14 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  padding-top: 5%;
+}
+
+.contacts__title {
+  font-family: Montserrat-SemiBold;
+  color: rgb(22, 119, 189);
+  padding-bottom: 3%;
+  font-size: 70px;
 }
 
 .contacts__adress {
@@ -282,4 +290,22 @@ body {
   flex-basis: 100%;
   flex: 1;
   height: 48%;
+  padding-left: 10%;
+}
+
+.contacts__map {
+  margin-left: 4%;
+  padding-top: 7%;
+}
+
+.contacts__adress-titles {
+  font-family: Montserrat-SemiBold;
+  color: rgb(7, 7, 7);
+  font-size: 50px;
+}
+
+.contacts__adress-main {
+  font-family: Montserrat-SemiBold;
+  color: rgb(7, 7, 7);
+  font-size: 35px;
 }/*# sourceMappingURL=style_index.css.map */
