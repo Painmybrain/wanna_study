@@ -305,14 +305,25 @@ main {
   padding-top: 7%;
 }
 
+.contacts__photo {
+  width: 754px;
+  height: 531px;
+  padding-bottom: 10%;
+  padding-right: 15%;
+}
+
 .contacts__adress-titles {
   font-family: Montserrat-SemiBold;
   color: rgb(7, 7, 7);
   font-size: 50px;
+  padding-top: 5%;
+  padding-left: 5%;
 }
 
 .contacts__adress-main {
   font-family: Montserrat-SemiBold;
   color: rgb(7, 7, 7);
   font-size: 35px;
+  line-height: 40px;
+  padding-left: 5%;
 }/*# sourceMappingURL=style_index.css.map */
