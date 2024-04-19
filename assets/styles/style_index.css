@@ -231,25 +231,38 @@ body {
 .promo {
   font-family: Montserrat-Regular;
   padding-left: 5%;
+  padding-top: 5%;
+}
+
+.promo__image-background {
+  background-image: url(/assets/pictures/promo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
 }
 
 .promo__title {
   color: rgb(22, 119, 189);
-  padding-top: 15%;
+  font-family: Montserrat-SemiBold;
+  padding-top: 5%;
   padding-bottom: 5%;
+  padding-left: 5%;
   font-weight: 600;
   font-size: 70px;
 }
 
 .promo__maintext-first {
   font-size: 55px;
-  line-height: normal;
+  line-height: 50px;
+  padding-left: 5%;
 }
 
 .promo__maintext-second {
   font-size: 55px;
-  padding-top: 5%;
-  line-height: normal;
+  padding-top: 3%;
+  line-height: 50px;
+  padding-left: 5%;
+  padding-bottom: 15%;
 }
 
 .maintext__bold {
