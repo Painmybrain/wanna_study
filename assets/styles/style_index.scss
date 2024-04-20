@@ -179,7 +179,7 @@ main {
         font-size: 2.3rem;
     }
     .directions__cards {
-        font-size: 0.9rem;
+        font-size: 1.3rem;
         margin-bottom: 1rem;
         line-height: 1.5rem;
     }
@@ -210,6 +210,11 @@ main {
     }
 
     // Кнопка "Записаться на бесплатное занятие" из раздела "Направления"
+    .directions__btn {
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
     .signup__btn {
         font-size: 1.7rem;
         padding: 1.3rem 1.5rem;
@@ -218,32 +223,33 @@ main {
 
 @media screen and (max-width: 426px) {
     .directions {
-        width: 100%;
-        justify-content: center;
-        align-items: center;
+        max-width: 100%;
         margin: 0 auto;
-        padding: 0 0.5rem;
+        padding: 0 1rem;
     }
     .directions__title {
+        max-width: 100%;
         margin-top: 1.6rem;
         margin-bottom: 1.2rem;
         font-size: 2.3rem;
+        padding-left: 1rem;
     }
     .directions__cards {
+        max-width: 100%;
         flex-wrap: nowrap;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-size: 0.9rem;
+        font-size: 1.3rem;
         margin-bottom: 1rem;
         line-height: 1.5rem;
     }
     .card__box {
-        width: 100%;
+        max-width: 100%;
         padding: 1rem;
         margin-bottom: 1rem;
         img {
-            width: 13.8rem;
+            width: 14.8rem;
             object-fit: cover;
         }
     .card__list {
@@ -265,10 +271,15 @@ main {
     }
 
     // Кнопка "Записаться на бесплатное занятие" из раздела "Направления"
+    .directions__btn {
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
     .signup__btn {
         margin: 0.1rem;
         font-size: 1.1rem;
-        padding: 1.1rem 1.3rem;
+        padding: 1rem 1.2rem;
     }
 }
 
