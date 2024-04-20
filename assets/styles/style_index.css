@@ -32,11 +32,6 @@ body {
   background-color: rgb(249, 249, 249);
   display: flex;
   justify-content: center;
-  width: 100%;
-}
-
-main {
-  width: 100%;
 }
 
 .directions {
@@ -44,7 +39,6 @@ main {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin: 0 auto;
 }
 
 .directions__title {
@@ -64,7 +58,6 @@ main {
   flex-direction: row;
   justify-content: space-between;
   color: rgb(255, 255, 255);
-  line-height: 35px;
 }
 
 .card__title {
@@ -237,82 +230,28 @@ main {
 
 .promo {
   font-family: Montserrat-Regular;
-  padding-top: 5%;
-  width: 100%;
-}
-
-.promo__image-background {
-  background-image: url(/assets/pictures/promo.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
+  padding-left: 5%;
 }
 
 .promo__title {
   color: rgb(22, 119, 189);
-  font-family: Montserrat-SemiBold;
-  padding-top: 5%;
+  padding-top: 15%;
   padding-bottom: 5%;
-  padding-left: 5%;
   font-weight: 600;
   font-size: 70px;
 }
 
 .promo__maintext-first {
   font-size: 55px;
-  line-height: 50px;
-  padding-left: 5%;
+  line-height: normal;
 }
 
 .promo__maintext-second {
   font-size: 55px;
-  padding-top: 3%;
-  line-height: 50px;
-  padding-left: 5%;
-  padding-bottom: 15%;
+  padding-top: 5%;
+  line-height: normal;
 }
 
 .maintext__bold {
   font-family: Montserrat-SemiBold;
-}
-
-.contacts {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  padding-top: 5%;
-}
-
-.contacts__title {
-  font-family: Montserrat-SemiBold;
-  color: rgb(22, 119, 189);
-  padding-bottom: 3%;
-  font-size: 70px;
-}
-
-.contacts__adress {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  height: 48%;
-  padding-left: 10%;
-}
-
-.contacts__map {
-  margin-left: 4%;
-  padding-top: 7%;
-}
-
-.contacts__adress-titles {
-  font-family: Montserrat-SemiBold;
-  color: rgb(7, 7, 7);
-  font-size: 50px;
-}
-
-.contacts__adress-main {
-  font-family: Montserrat-SemiBold;
-  color: rgb(7, 7, 7);
-  font-size: 35px;
 }/*# sourceMappingURL=style_index.css.map */
