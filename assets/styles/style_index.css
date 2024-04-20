@@ -39,6 +39,139 @@ main {
   width: 100%;
 }
 
+.header {
+  position: relative; /* Для возможности использования z-index */
+  z-index: 1; /* Устанавливаем z-index выше, чем у фонового контейнера */
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-container {
+  min-height: 100%; /* Минимальная высота равна 100% */
+   display: flex;
+  flex-direction: column; /* Колонный флекс */
+  justify-content: space-between; /* Распределение пространства */
+  }
+ 
+  .background-site-container {
+    position: absolute; /* Позиционирование относительно ближайшего родителя с position, отличным от static */
+   top: 0;
+   left: 0;
+   width: 100%; /* Заполняем весь доступный горизонтальный пространство */
+   height: 120%; /* Высота соответствует родительскому элементу */
+   z-index: -1; /* Отрицательный z-index для размещения за содержимым */
+   background-image: url("./assets/pictures/headerbackground.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Для размещения кнопки внизу */
+   }
+
+ .header {
+   padding: 30px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: transparent;
+ }
+ .logo-container img {
+   display: flex;
+   width: 283px;
+ }
+ .navigation {
+   display: flex;
+   margin: 25px 25px;
+   text-decoration: none;
+ }
+ .navigation a {
+   display: flex;
+   text-decoration: none;
+   color: #1576bd;
+   margin-right: 10px;
+   font-size: 25px;
+   padding: 20px;
+ }
+ 
+ .no-underline, .no-underline:hover, .no-underline:visited {
+  text-decoration: none;
+  display: flex;
+  font-size: 24px;
+  color: #1576bd;
+  white-space: nowrap;
+  }
+ 
+ .contact-icons {
+   display: flex;
+   align-items: center;
+   margin-bottom: 30px;
+   text-decoration: none;
+ }
+ .icon-links {
+   display: flex;
+   margin-right: 10px;
+   align-items: center;
+   
+ }
+ .icon-links img {
+   width: 24px;
+   height: 24px;
+   margin-right: 20px;
+ }
+ .container {
+   display: flex;
+   justify-content: space-between; /* Распределение контента по ширине */
+   padding: 20px;
+   background-color: transparent;
+   font-size: 30px;
+ }
+ .text-section {
+   width: 50%; /* Задаем ширину текстового блока */
+   padding: 20px;
+   color: #1572c2;
+ }
+ .text-section h1 {
+   font-size: 30px; /* Увеличенный размер для заголовка */
+   text-transform: uppercase; /* Преобразование текста в верхний регистр */
+ }
+ .text-section h2 {
+   font-size: 20px; /* Увеличенный размер для заголовка */
+   text-transform: uppercase; /* Преобразование текста в верхний регистр */
+ } 
+
+ .italic-text {
+  font-style: italic; /* Делает текст курсивным */
+}
+ 
+ .image-section {
+   width: 50%; /* Задаем ширину блока с изображением */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .image-section img {
+   max-width: 60%; /* Уменьшаем изображение, чтобы оно не выходило за пределы своего блока */
+   height: auto;
+   border-radius: 10px; /* Добавление закругленных углов */
+ }
+ .button-container {
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.free-lesson-button {
+  background-color: #fbdd29;
+  color: #1576bd;
+  text-decoration: none;
+  padding: 20px 40px;
+  border-radius: 20px;
+  display: inline-block;
+  font-size: 30px;
+}
+
 .directions {
   max-width: 1696px;
   display: flex;
@@ -315,4 +448,31 @@ main {
   font-family: Montserrat-SemiBold;
   color: rgb(7, 7, 7);
   font-size: 35px;
-}/*# sourceMappingURL=style_index.css.map */
+}
+
+.footer {
+  background-color: #1572c2;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .icon-links {
+  display: flex;
+  gap: 10px;
+  margin-right: 20px;
+}
+.footer .icon-links img {
+  width: 24px;
+  height: 24px;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style_index.css.map */
