@@ -7,16 +7,20 @@
     <link rel="shortcut icon" href="./assets/pictures/Logo.png" type="image/png">
     <link rel="stylesheet" href="./assets/styles/normalize.css" />
     <link rel="stylesheet" href="./assets/styles/style_index.css" />
-    <!-- Локальное подключение bootstrap css -->
-    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
   </head>
+
   <body>
+    
     <main>
+      <!-- СЮДА ВСТАВЛЯЕМ ХЭДЕР -->
+
+
+      
       <!-- Раздел "Направления" с карточками -->
       <div class="directions">
         <div class="directions__title">Направления</div>
         <div class="directions__cards">
-          <div class="card__1">
+          <div class="card__box" id="card__1">
             <img
               class="card__img"
               src="./assets/images/directions/1.png"
@@ -31,7 +35,7 @@
               будут
               <div class="card__list">
                 <ul>
-                  <li>готовить руку к письму <br> и осваивать первые <br> навыки,</li>
+                  <li class="card__li">готовить руку к письму <br> и осваивать первые <br> навыки,</li>
                   <li>изучать алфавит <br> и учиться читать,</li>
                   <li>знакомиться со счетом.</li>
                 </ul>
@@ -54,7 +58,7 @@
             </div>
           </div>
 
-          <div class="card__2">
+          <div class="card__box" id="card__2">
             <img
               class="card__img"
               src="./assets/images/directions/2.png"
@@ -90,7 +94,7 @@
             </div>
           </div>
 
-          <div class="card__3">
+          <div class="card__box" id="card__3">
             <img
               class="card__img"
               src="./assets/images/directions/3.png"
@@ -109,9 +113,9 @@
                   <li>освобождаем ваши <br> семейные вечера для <br> более приятных занятий, <br> чем д/з</li>
                 </ul>
               </div>
-              <p>В результате растет <br />
+              В результате растет <br />
               успеваемость и мотивация <br />
-              к учебе.</p> 
+              к учебе.
               <p>600₽ / 1 занятие в мини- <br />
               группе <br />
               900₽ / 1 занятие <br />
@@ -121,7 +125,7 @@
             </div>
           </div>
 
-          <div class="card__4">
+          <div class="card__box" id="card__4">
             <img
               class="card__img"
               src="./assets/images/directions/4.png"
@@ -142,7 +146,7 @@
             </div>
           </div>
 
-          <div class="card__5">
+          <div class="card__box" id="card__5">
             <img
               class="card__img"
               src="./assets/images/directions/5.png"
@@ -162,7 +166,7 @@
             </div>
           </div>
 
-          <div class="card__6">
+          <div class="card__box" id="card__6">
             <img
               class="card__img"
               src="./assets/images/directions/6.png"
@@ -184,6 +188,39 @@
           >Записаться на бесплатное занятие</a
         >
       </div>
+
+      <!-- Отзывы - слайдер -->
+
+      <section class="feedbacks">
+        <h2 class="feedbacks__title">Отзывы</h2>
+
+        <div class="slider middle">
+          <div class="slides">
+            <input type="radio" name="r" id="r1" checked />
+            <input type="radio" name="r" id="r2" />
+
+            <div class="slide s1">
+              <div class="slide__img">
+                <img src="/assets/images/feedback/feedback-1.png" alt="Feedback" />
+                <img src="/assets/images/feedback/feedback-2.png" alt="Feedback" />
+                <img src="/assets/images/feedback/feedback-3.png" alt="Feedback" />
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide__img">
+                <img src="/assets/images/feedback/feedback-4.png" alt="Feedback" />
+                <img src="/assets/images/feedback/feedback-5.png" alt="Feedback" />
+                <img src="/assets/images/feedback/feedback-6.png" alt="Feedback" />
+              </div>
+            </div>
+          </div>
+
+          <div class="navigation">
+            <label class="bar" for="r1"></label>
+            <label class="bar bar_next" for="r2"></label>
+          </div>
+        </div>
+      </section>
 
       <!--Раздел Педагоги-->
       <div class="teachers">
@@ -233,7 +270,6 @@
           </div>
         </div>
       </div>
-      
 
 
       <!-- Раздел Акции -->
@@ -254,16 +290,16 @@
     <span class="contacts__adress-titles">Телефон:</span>
     <span class="contacts__adress-main">+7(999)255-80-55</span>
     <span class="contacts__adress-titles">Режим работы:</span>
-    <span class="contacts__adress-main">Понедельник-суббота с 9 до 20 работаем по предварительной записи</span>
+    <span class="contacts__adress-main">Понедельник-суббота с 9 до 20<p>работаем по предварительной</p> записи</span>
     <span class="contacts__adress-titles">Наш адрес:</span>
-    <span class="contacts__adress-main">Калининград улица Генерала Буткова 20к1 напротив лицея №35</span>
+    <span class="contacts__adress-main">Калининград<p>улица Генерала Буткова 20к1</p>напротив лицея №35</span>
   </div>
     <div class="contacts__map">
-      <img src="./assets/pictures/map.png" alt="map">
+      <img class="contacts__photo" src="./assets/pictures/map.png" alt="map">
     </div>
   </div>
+   
     </main>
-    <!-- Локальное подключение bootstrap js -->
-    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    
   </body>
 </html>
