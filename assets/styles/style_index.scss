@@ -33,12 +33,8 @@ body {
     background-color: rgba(249, 249, 249, 1);
     display: flex;
     justify-content: center;
-    width: 100%;
 }
 
-main {
-    width: 100%;
-}
 
 
 
@@ -485,53 +481,31 @@ input[name="r"] {
 
 
 // Раздел "Акции"
-
 .promo{
     font-family: Montserrat-Regular;
-    // padding-left: 5%;
-    padding-top: 5%;
-    width: 100%;
-}
-.promo__image-background{
-    background-image: url(/assets/pictures/promo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-}
+    padding-left: 5%;
 
+}
 .promo__title{
     color: rgba(22, 119, 189, 1);
-    font-family: Montserrat-SemiBold;
-    padding-top: 5%;
+    padding-top: 15%;
     padding-bottom: 5%;
-    padding-left: 5%;
     font-weight: 600;
     font-size: 70px;
 }
 .promo__maintext-first{
     font-size: 55px;
-    line-height:50px;
-    padding-left: 5%;
+    line-height:normal;
 
 }
 .promo__maintext-second{
     font-size: 55px;
-    padding-top: 3%;
-    line-height:50px;
-    padding-left: 5%;
-    padding-bottom: 15%;
-}
-.maintext__bold{
-    font-family: Montserrat-SemiBold;
+    padding-top: 5%;
+    line-height:normal;
 }
 
-// Раздел "Контакты"
-.contacts{
-    display: flex;
-    flex-direction: row;
-	flex-wrap: wrap;
-	width: 100%;
-    padding-top: 5%;
+.maintext__bold{
+    font-family: Montserrat-SemiBold;
 }
 .contacts__title
 {
