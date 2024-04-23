@@ -205,6 +205,11 @@ main {
   padding: 2rem;
   margin-bottom: 1.6rem;
 }
+.card__box img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 .card__title {
   margin-top: 2.2rem;
@@ -274,7 +279,7 @@ main {
     margin-bottom: 1.5rem;
   }
   .card__box img {
-    width: 21.8rem;
+    width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -319,7 +324,7 @@ main {
     margin-bottom: 1rem;
   }
   .card__box img {
-    width: 13.8rem;
+    width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -378,7 +383,7 @@ main {
     margin-bottom: 1rem;
   }
   .card__box img {
-    width: 14.8rem;
+    width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
