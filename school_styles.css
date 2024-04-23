@@ -6,28 +6,27 @@ body, html {
 }
 
 .site-container {
- min-height: 100%; /* Минимальная высота равна 100% */
-  display: flex;
- flex-direction: column; /* Колонный флекс */
- justify-content: space-between; /* Распределение пространства */
- }
+  min-height: 100%; /* Минимальная высота равна 100% */
+   display: flex;
+  flex-direction: column; /* Колонный флекс */
+  justify-content: space-between; /* Распределение пространства */
+  }
 
-.background-container {
-  background-image: url("./assets/pictures/headerbackground.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-bottom: 0px; /* Добавил отступ снизу */
-}
-.header {
-  padding: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: transparent;
-}
+  .background-container {
+    background-image: url("./assets/pictures/headerbackground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 0px; /* Добавил отступ снизу */
+  }
+  .header {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+  }
 .logo-container img {
-  display: flex;
-  width: 230px;
+  width: 150px;
 }
 .navigation {
   display: flex;
@@ -40,12 +39,11 @@ body, html {
   color: #1576bd;
   margin-right: 10px;
   font-size: 25px;
-  padding: 20px;
+  padding: 0px;
 }
 
 .no-underline, .no-underline:hover, .no-underline:visited {
  text-decoration: none;
- display: flex;
  font-size: 24px;
  color: #1576bd;
  white-space: nowrap;
@@ -156,203 +154,4 @@ body, html {
 }
 .footer a:hover {
   text-decoration: underline;
-}
-
-/* Hamburger menu button */
-.hamburger {
-  display: none; /* Hidden by default, will be displayed in a media query below */
-  
-  
-/* Media Queries for Responsive Adjustments */
-@media (max-width: 344px) {
-  .hamburger {
-    display: flex; /* Show the hamburger menu */
-  }
-
-  .navigation {
-    display: none; /* Hidden by default, will show when hamburger is active */
-    flex-direction: column;
-    align-items: center;
-    background-color: #f9f9f9;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-  }
-
-  .navigation.active {
-    display: flex;
-  }
-
-  .contact-icons {
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px; /* Space from navigation */
-  }
-
-  .contact-icons .icon-links {
-    justify-content: center;
-  }
-}
-/* Header and navigation styles */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: transparent;
-  padding: 20px;
-  position: relative;
-}
-
-.logo-container img {
-  width: 150px; /* Adjust based on your design needs */
-}
-
-.navigation {
-  display: none; /* Hidden by default */
-  position: absolute;
-  flex-direction: column;
-  background-color: #f9f9f9;
-  top: 100%;
-  width: 100%; /* Full width to cover the area under the header */
-  left: 0;
-}
-
-.navigation.active {
-  display: flex;
-}
-
-.hamburger {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 40px;
-  height: 30px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-}
-
-.hamburger span {
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: #1576bd;
-  border-radius: 2px;
-  transition: all 0.3s linear;
-}
-
-.hamburger.active span:nth-child(1) {
-  transform: translateY(11px) rotate(45deg);
-}
-
-.hamburger.active span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.active span:nth-child(3) {
-  transform: translateY(-11px) rotate(-45deg);
-}
-
-.hamburger.active .contact-icons .icon-links  span:nth-child(4){
-  transform: translateY(-11px) rotate(-45deg);
-  justify-content: center;
-}
-
-/* Responsive adjustments */
-@media (max-width: 1024px) {
-  .header, .footer {
-      flex-direction: column;
-  }
-
-  .header-contacts, .contact-icons, .footer .icon-links {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .button-container, .free-lesson-button {
-      font-size: 20px;
-      padding: 10px 20px;
-  }
-}
-
-@media (max-width: 520px) {
-  .logo-container img {
-      width: 120px; /* Smaller logo for mobile */
-  }
-
-  .navigation a, .no-underline {
-      font-size: 16px; /* Smaller text for mobile */
-  }
-}
-
-/* Media queries for responsiveness */
-/* For screens wider than 1440px */
-@media (min-width: 1441px) {
-  .container, .text-section, .image-section img {
-    padding: 0 20px;
-  }
-
-  .text-section h1, .text-section h2 {
-    font-size: 30px;
-  }
-}
-
-/* For screens up to 1440px */
-@media (max-width: 1440px) {
-  .logo-container img {
-    width: 200px;
-  }
-
-  .navigation a, .no-underline {
-    font-size: 20px;
-  }
-
-  .text-section, .image-section {
-    width: 100%;
-    padding: 20px;
-  }
-}
-
-/* For screens up to 1024px */
-@media (max-width: 1024px) {
-  .header, .footer {
-    flex-direction: column;
-  }
-
-  .navigation, .contact-icons, .footer .icon-links {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .button-container, .free-lesson-button {
-    font-size: 20px;
-    padding: 10px 20px;
-  }
-}
-
-/* For mobile screens (up to 520px) */
-@media (max-width: 520px) {
-  .header {
-    padding: 20px 10px;
-  }
-
-  .logo-container img {
-    width: 150px;
-  }
-
-  .navigation a, .no-underline {
-    font-size: 18px;
-    padding: 10px;
-  }
-
-  .text-section, .image-section {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .text-section h1, .text-section h2 {
-    font-size: 20px;
-  }
 }
