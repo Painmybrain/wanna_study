@@ -22,22 +22,22 @@
           <span></span>
           <span></span>
       </button>
-      <div class="header-contacts">
-          <div class="contact-icons">
-              <div class="icon-links">
-                  <a href="#"><img src="./assets/pictures/telegram.png" alt="Telegram" /></a>
-                  <a href="#"><img src="./assets/pictures/vk.png" alt="VK" /></a>
-                  <a href="#"><img src="./assets/pictures/whatsup.png" alt="WhatsApp" /></a>
-              </div>
-              <a href="tel:+79992558055" class="no-underline"><b>+7 (999) 255-80-55</b></a>
-          </div>
-      </div>
       <div class="navigation" id="navigation">
           <a href="#"><b>Направления<br>и стоимость</b></a>
           <a href="#"><b>Педагоги</b></a>
           <a href="#"><b>Акции</b></a>
           <a href="#"><b>Контакты</b></a>
       </div>
+      <div class="header-contacts">
+        <div class="contact-icons">
+            <div class="icon-links">
+                <a href="#"><img src="./assets/pictures/telegram.png" alt="Telegram" /></a>
+                <a href="#"><img src="./assets/pictures/vk.png" alt="VK" /></a>
+                <a href="#"><img src="./assets/pictures/whatsup.png" alt="WhatsApp" /></a>
+            </div>
+            <a href="tel:+79992558055" class="no-underline"><b>+7 (999) 255-80-55</b></a>
+        </div>
+    </div>
   </div>
       <div class="container">
         <div class="text-section">
@@ -53,7 +53,7 @@
         </div>
           </div>
       <div class="button-container">
-        <a href="#" class="free-lesson-button">БЕСПЛАТНОЕ ПЕРВОЕ ЗАНЯТИЕ</a>
+        <a href="#" class="free-lesson-button"><b>БЕСПЛАТНОЕ ПЕРВОЕ ЗАНЯТИЕ</b></a>
       </div>
            
      <!-- Весь остальной контент -->
@@ -79,11 +79,13 @@
     </div>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        document.getElementById('hamburger').addEventListener('click', function() {
-          this.classList.toggle('active');
-          document.getElementById('navigation').classList.toggle('active');
-        });
-      });
+      document.getElementById('hamburger').addEventListener('click', function() {
+        if (window.innerWidth <= 1024) {
+            this.classList.toggle('active');
+            document.getElementById('navigation').classList.toggle('active');
+        }
+    });
+});
     </script>
   </body>
 </html>
