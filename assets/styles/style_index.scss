@@ -30,15 +30,16 @@
     box-sizing: border-box;
 }
 body {
-    background-color: rgba(249, 249, 249, 1);
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 main{
     width: 100%;
 }
 
+// ХЭДЕР
 
 
 
@@ -684,3 +685,37 @@ input[name="r"] {
         height: 30%;
     }
   }
+
+
+//   ФУТЕР
+.footer {
+    background-color: #1572c2;
+    color: white;
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Montserrat-SemiBold;
+    font-size: 30px;
+  }
+  .footer__links {
+    display: flex;
+    flex-direction: row;
+    
+  }
+   .contact-icons img {
+    width: 46px;
+    height: 46px;
+    margin-right: 1rem;
+  }
+  .icon-links {
+    margin-left: 4rem;
+  }
+  .footer a {
+    color: white;
+    text-decoration: none;
+  }
+//   .footer a:hover {
+//     text-decoration: underline;
+//   }
+  

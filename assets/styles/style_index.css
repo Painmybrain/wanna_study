@@ -29,9 +29,9 @@
 }
 
 body {
-  background-color: rgb(249, 249, 249);
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 main {
@@ -656,4 +656,34 @@ input[name=r] {
     min-width: 340px;
     height: 30%;
   }
+}
+.footer {
+  background-color: #1572c2;
+  color: white;
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Montserrat-SemiBold;
+  font-size: 30px;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-icons img {
+  width: 46px;
+  height: 46px;
+  margin-right: 1rem;
+}
+
+.icon-links {
+  margin-left: 4rem;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
 }/*# sourceMappingURL=style_index.css.map */
