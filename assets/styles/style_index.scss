@@ -800,10 +800,8 @@ input[name="r"] {
 
 // Раздел "Акции"
 .promo{
-    font-family: Montserrat-Regular;
-    
+    font-family: Montserrat-Regular; 
     padding-top: 5%;
-
 }
 .promo__image-background{
     background-image: url("../pictures/promo.png");
@@ -816,22 +814,23 @@ input[name="r"] {
     font-family: Montserrat-SemiBold;
     padding-top: 5%;
     padding-bottom: 5%;
-    padding-left: 5%;
+    padding-left: 10%;
     font-weight: 600;
-    font-size: 70px;
+    font-size: 50px;
 }
 .promo__maintext-first{
-    font-size: 55px;
-    line-height:50px;
-    padding-left: 5%;
+    font-size: 40px;
+    line-height: 50px;
+    padding-left: 10%;
+    padding-top: 5%;
 
 }
 .promo__maintext-second{
-    font-size: 55px;
+    font-size: 40px;
     padding-top: 3%;
     line-height:50px;
-    padding-left: 5%;
-    padding-bottom: 15%;
+    padding-left: 10%;
+    padding-bottom: 20%;
 }
 .maintext__bold{
     font-family: Montserrat-SemiBold;
@@ -850,7 +849,7 @@ input[name="r"] {
     font-family: Montserrat-SemiBold;
     color:rgba(22, 119, 189, 1);
     padding-bottom: 5%;
-    font-size:70px;
+    font-size:50px;
 
 }
 .contacts__adress
@@ -878,14 +877,17 @@ input[name="r"] {
 .contacts__adress-titles{
     font-family: Montserrat-SemiBold;
     color:rgb(7, 7, 7);
-    font-size: 40px;
+    font-size: 35px;
     padding-bottom: 5%;
 }
 .contacts__adress-main{
     font-family: Montserrat-SemiBold;
     color:rgb(7, 7, 7);
-    font-size: 30px;
+    font-size: 25px;
     padding-bottom: 5%;
+}
+.contacts__adress-bold{
+    font-size: 20px;
 }
 
 
