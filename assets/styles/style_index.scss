@@ -256,48 +256,33 @@ main{
 // #card__3, #card__4 {
 //     background-color: #70C7E3;
 // }
-.directions, 
-.new__cards {
-    max-width: 1374px;
+.directions {
+    max-width: 1500px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     margin: 0 auto;
     padding: 0 2rem;
 }
-.directions__title,
-.new__cards-title {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+.directions__title {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
     color: rgba(22, 119, 189, 1);
     font-family: Montserrat-SemiBold;
     font-weight: 600;
-    font-size: 30px;
-    line-height: 7rem;
+    font-size: 35px;
+    // line-height: 7rem;
 }
-.directions__cards,
-.new__cards-box {
-    font-family: Montserrat-SemiBold;
+.directions__cards {
+    font-family: Montserrat-Medium;
     font-size: 15px;
     margin-bottom: 1.25rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     color: rgba(255, 255, 255, 1);
     // line-height: 2rem;
-}
-.new__cards-box {
-    img {
-        width: 390px;
-        margin-bottom: 1rem;
-    }
-}
-.new__img-1 {
-    height: 640px;
-}
-.new__img-2 {
-    height: 500px;
 }
 .card__box {
     width: 390px;
@@ -324,10 +309,6 @@ main{
 .card__list {
     padding-left: 1rem;
 }
-.card__title-2 {
-    margin-top: 1rem;
-    font-family: Montserrat-ExtraBold;
-}
 #card__1, #card__5 {
     background-color: rgba(31, 180, 122, 1);
 }
@@ -347,7 +328,7 @@ main{
     background-color: rgba(251, 221, 41, 1);
     color: rgba(22, 119, 189, 1);
     font-family: Montserrat-Medium;
-    font-size: 2.1rem;
+    font-size: 35px;
     padding: 1.6rem 1.8rem;
     text-decoration: none;
     border-radius: 60px;
@@ -398,9 +379,9 @@ main{
         font-size: 2.3rem;
     }
     .directions__cards {
-        font-size: 1.3rem;
+        // font-size: 1.3rem;
         margin-bottom: 1rem;
-        line-height: 1.5rem;
+        // line-height: 1.5rem;
     }
     .card__box {
         max-width: 254px;
@@ -423,9 +404,6 @@ main{
             margin-top: 1rem;
         }
     }
-    .card__title-2 {
-        margin-top: 2rem;
-    }
     }
 
     // Кнопка "Записаться на бесплатное занятие" из раздела "Направления"
@@ -435,7 +413,7 @@ main{
         padding-right: 2rem;
     }
     .signup__btn {
-        font-size: 1.7rem;
+        // font-size: 1.7rem;
         padding: 1.3rem 1.5rem;
     }
 }
@@ -450,7 +428,7 @@ main{
         max-width: 100%;
         margin-top: 1.6rem;
         margin-bottom: 1.2rem;
-        font-size: 2rem;
+        // font-size: 2rem;
         padding-left: 1rem;
     }
     .directions__cards {
@@ -459,9 +437,9 @@ main{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-size: 1.3rem;
+        // font-size: 1.3rem;
         margin-bottom: 1rem;
-        line-height: 1.5rem;
+        // line-height: 1.5rem;
     }
     .card__box {
         max-width: 100%;
@@ -497,7 +475,7 @@ main{
     }
     .signup__btn {
         margin: 0.1rem;
-        font-size: 1.3rem;
+        // font-size: 1.3rem;
         padding: 1rem 1.2rem;
     }
 }
