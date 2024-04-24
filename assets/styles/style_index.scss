@@ -185,7 +185,7 @@ main{
     color: #1576bd;
     text-decoration: none;
     padding: 20px 40px;
-    border-radius: 20px;
+    border-radius: 60px;
     display: inline-block; /* Для центрирования кнопки */
     font-size: 30px;
   }
@@ -194,7 +194,7 @@ main{
 // Раздел "Направления" с карточками
 // Под ширину экрана 1900px
 .directions {
-    max-width: 1696px;
+    max-width: 1274px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -202,50 +202,50 @@ main{
     padding: 0 2rem;
 }
 .directions__title {
-    margin-top: 8rem;
-    margin-bottom: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
     color: rgba(22, 119, 189, 1);
     font-family: Montserrat-SemiBold;
     font-weight: 600;
-    font-size: 4.4rem;
+    font-size: 4.375rem;
     line-height: 7rem;
 }
 .directions__cards {
     font-family: Montserrat-SemiBold;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     margin-bottom: 1.25rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
     color: rgba(255, 255, 255, 1);
-    line-height: 2.2rem;
+    line-height: 2rem;
 }
 .card__box {
-    max-width: 530px;
+    max-width: 396px;
     border-radius: 20px;
-    padding: 2rem;
-    margin-bottom: 1.6rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
     img {
         width: 100%;
         object-fit: cover;
     }
 }
 .card__title {
-    margin-top: 2.2rem;
-    margin-bottom: 2.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 .card__text {
     margin-bottom: 2rem;
     p {
-        margin-top: 2.2rem;
+        margin-top: 2rem;
     }
 }
 .card__list {
-    padding-left: 2rem;
+    padding-left: 1.5rem;
 }
 .card__title-2 {
-    margin-top: 2.2rem;
+    margin-top: 2rem;
     font-family: Montserrat-ExtraBold;
 }
 #card__1, #card__5 {
@@ -267,57 +267,45 @@ main{
     background-color: rgba(251, 221, 41, 1);
     color: rgba(22, 119, 189, 1);
     font-family: Montserrat-Medium;
-    font-size: 3.1rem;
+    font-size: 2.1rem;
     padding: 1.6rem 1.8rem;
     text-decoration: none;
     border-radius: 60px;
 }
 
-@media screen and (max-width: 1442px) {
-    .directions {
-        max-width: 1274px;
+@media screen and (min-width: 1920px) {
+.directions {
+    max-width: 1696px;
+}
+.directions__title {
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+    font-size: 4.4rem;
+}
+.directions__cards {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+}
+.card__box {
+    max-width: 530px;
+    padding: 2rem;
+    margin-bottom: 1.6rem;
+}
+.card__title {
+    margin-top: 2.2rem;
+    margin-bottom: 2.2rem;
+}
+.card__text {
+    p {
+        margin-top: 2.2rem;
     }
-    .directions__title {
-        margin-top: 5rem;
-        margin-bottom: 3rem;
-        font-size: 3.4rem;
-    }
-    .directions__cards {
-        font-size: 1.3rem;
-        margin-bottom: 1.25rem;
-        line-height: 2rem;
-    }
-    .card__box {
-        max-width: 396px;
-        padding: 1.5rem;
-        margin-bottom: 1.5rem;
-        img {
-            width: 100%;
-            object-fit: cover;
-        }
-    .card__list {
-        padding-left: 1.5rem;
-    }    
-    .card__title {
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
-    .card__text {
-        margin-bottom: 2rem;
-        p {
-            margin-top: 2rem;
-        }
-    }
-    .card__title-2 {
-        margin-top: 2rem;
-    }
-    }
-
-    // Кнопка "Записаться на бесплатное занятие" из раздела "Направления"
-    .signup__btn {
-        font-size: 2.1rem;
-        padding: 1.6rem 1.8rem;
-    }
+}
+.card__list {
+    padding-left: 2rem;
+}
+.card__title-2 {
+    margin-top: 2.2rem;
+}
 }
 
 @media screen and (max-width: 1026px) {
