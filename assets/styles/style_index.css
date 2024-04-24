@@ -189,9 +189,8 @@ main {
   font-size: 30px;
 }
 
-.directions,
-.new__cards {
-  max-width: 1374px;
+.directions {
+  max-width: 1500px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -199,40 +198,24 @@ main {
   padding: 0 2rem;
 }
 
-.directions__title,
-.new__cards-title {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+.directions__title {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
   color: rgb(22, 119, 189);
   font-family: Montserrat-SemiBold;
   font-weight: 600;
-  font-size: 30px;
-  line-height: 7rem;
+  font-size: 35px;
 }
 
-.directions__cards,
-.new__cards-box {
-  font-family: Montserrat-SemiBold;
+.directions__cards {
+  font-family: Montserrat-Medium;
   font-size: 15px;
   margin-bottom: 1.25rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   color: rgb(255, 255, 255);
-}
-
-.new__cards-box img {
-  width: 390px;
-  margin-bottom: 1rem;
-}
-
-.new__img-1 {
-  height: 640px;
-}
-
-.new__img-2 {
-  height: 500px;
 }
 
 .card__box {
@@ -265,11 +248,6 @@ main {
   padding-left: 1rem;
 }
 
-.card__title-2 {
-  margin-top: 1rem;
-  font-family: Montserrat-ExtraBold;
-}
-
 #card__1, #card__5 {
   background-color: rgb(31, 180, 122);
 }
@@ -292,7 +270,7 @@ main {
   background-color: rgb(251, 221, 41);
   color: rgb(22, 119, 189);
   font-family: Montserrat-Medium;
-  font-size: 2.1rem;
+  font-size: 35px;
   padding: 1.6rem 1.8rem;
   text-decoration: none;
   border-radius: 60px;
@@ -308,9 +286,7 @@ main {
     font-size: 2.3rem;
   }
   .directions__cards {
-    font-size: 1.3rem;
     margin-bottom: 1rem;
-    line-height: 1.5rem;
   }
   .card__box {
     max-width: 254px;
@@ -335,16 +311,12 @@ main {
   .card__box .card__text p {
     margin-top: 1rem;
   }
-  .card__box .card__title-2 {
-    margin-top: 2rem;
-  }
   .directions__btn {
     width: 100%;
     padding-left: 2rem;
     padding-right: 2rem;
   }
   .signup__btn {
-    font-size: 1.7rem;
     padding: 1.3rem 1.5rem;
   }
 }
@@ -358,7 +330,6 @@ main {
     max-width: 100%;
     margin-top: 1.6rem;
     margin-bottom: 1.2rem;
-    font-size: 2rem;
     padding-left: 1rem;
   }
   .directions__cards {
@@ -367,9 +338,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.3rem;
     margin-bottom: 1rem;
-    line-height: 1.5rem;
   }
   .card__box {
     max-width: 100%;
@@ -404,7 +373,6 @@ main {
   }
   .signup__btn {
     margin: 0.1rem;
-    font-size: 1.3rem;
     padding: 1rem 1.2rem;
   }
 }
