@@ -273,40 +273,40 @@ main{
     border-radius: 60px;
 }
 
-// @media screen and (min-width: 1920px) {
-// .directions {
-//     max-width: 1696px;
-// }
-// .directions__title {
-//     margin-top: 5rem;
-//     margin-bottom: 3rem;
-//     font-size: 4.4rem;
-// }
-// .directions__cards {
-//     font-size: 1.8rem;
-//     line-height: 2.2rem;
-// }
-// .card__box {
-//     max-width: 530px;
-//     padding: 2rem;
-//     margin-bottom: 1.6rem;
-// }
-// .card__title {
-//     margin-top: 2.2rem;
-//     margin-bottom: 2.2rem;
-// }
-// .card__text {
-//     p {
-//         margin-top: 2.2rem;
-//     }
-// }
-// .card__list {
-//     padding-left: 2rem;
-// }
-// .card__title-2 {
-//     margin-top: 2.2rem;
-// }
-// }
+@media screen and (min-width: 1920px) {
+.directions {
+    max-width: 1696px;
+}
+.directions__title {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    font-size: 4.4rem;
+}
+.directions__cards {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+}
+.card__box {
+    max-width: 530px;
+    padding: 2rem;
+    margin-bottom: 1.6rem;
+}
+.card__title {
+    margin-top: 2.2rem;
+    margin-bottom: 2.2rem;
+}
+.card__text {
+    p {
+        margin-top: 2.2rem;
+    }
+}
+.card__list {
+    padding-left: 2rem;
+}
+.card__title-2 {
+    margin-top: 2.2rem;
+}
+}
 
 @media screen and (max-width: 1026px) {
     .directions {
