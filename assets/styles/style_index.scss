@@ -835,7 +835,18 @@ input[name="r"] {
 .maintext__bold{
     font-family: Montserrat-SemiBold;
 }
-
+@media screen and (max-width: 426px){
+    .promo__title {font-size: 25px;
+}
+.promo__maintext-first {
+    font-size: 15px;
+    line-height:10px;
+}
+.promo__maintext-second{
+    font-size: 15px;
+    line-height:10px;
+}
+}
 // Раздел "Контакты"
 .contacts{
     display: flex;
