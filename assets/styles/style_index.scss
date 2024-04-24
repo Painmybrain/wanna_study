@@ -192,7 +192,6 @@ main{
 
 
 // Раздел "Направления" с карточками
-// Под ширину экрана 1900px
 .directions {
     max-width: 1274px;
     display: flex;
@@ -262,6 +261,7 @@ main{
 .directions__btn {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 .signup__btn {
     background-color: rgba(251, 221, 41, 1);
@@ -278,8 +278,8 @@ main{
     max-width: 1696px;
 }
 .directions__title {
-    margin-top: 8rem;
-    margin-bottom: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
     font-size: 4.4rem;
 }
 .directions__cards {
@@ -370,7 +370,7 @@ main{
         max-width: 100%;
         margin-top: 1.6rem;
         margin-bottom: 1.2rem;
-        font-size: 2.3rem;
+        font-size: 2rem;
         padding-left: 1rem;
     }
     .directions__cards {
@@ -417,7 +417,7 @@ main{
     }
     .signup__btn {
         margin: 0.1rem;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         padding: 1rem 1.2rem;
     }
 }
