@@ -40,7 +40,7 @@ main {
 }
 
 .directions {
-  max-width: 1600px;
+  max-width: 1440px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -126,51 +126,6 @@ main {
   border-radius: 60px;
 }
 
-@media screen and (max-width: 1026px) {
-  .directions {
-    max-width: 858px;
-  }
-  .directions__title {
-    margin-top: 2rem;
-    margin-bottom: 1.5rem;
-    font-size: 2.3rem;
-  }
-  .directions__cards {
-    margin-bottom: 1rem;
-  }
-  .card__box {
-    max-width: 390px;
-    padding: 1rem;
-    margin-bottom: 1rem;
-  }
-  .card__box img {
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .card__box .card__list {
-    padding-left: 1rem;
-  }
-  .card__box .card__title {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-  .card__box .card__text {
-    margin-bottom: 1rem;
-  }
-  .card__box .card__text p {
-    margin-top: 1rem;
-  }
-  .directions__btn {
-    width: 100%;
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-  .signup__btn {
-    font-size: 25px;
-    padding: 1.3rem 1.5rem;
-  }
-}
 @media screen and (max-width: 426px) {
   .directions {
     max-width: 100%;
@@ -769,6 +724,12 @@ input[name=r] {
 .button-container {
   text-align: center; /* Выравниваем кнопку по центру */
   padding: 20px; /* Добавляем отступ сверху и снизу для кнопки */
+}
+
+.button-container a {
+  font-family: Montserrat-Medium;
+  font-size: 35px;
+  border-radius: 60px;
 }
 
 .image-section {

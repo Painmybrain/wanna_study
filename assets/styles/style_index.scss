@@ -122,54 +122,54 @@ main{
 }
 
 
-@media screen and (max-width: 1026px) {
-    .directions {
-        max-width: 858px;
-    }
-    .directions__title {
-        margin-top: 2rem;
-        margin-bottom: 1.5rem;
-        font-size: 2.3rem;
-    }
-    .directions__cards {
-        // font-size: 1.3rem;
-        margin-bottom: 1rem;
-        // line-height: 1.5rem;
-    }
-    .card__box {
-        max-width: 390px;
-        padding: 1rem;
-        margin-bottom: 1rem;
-        img {
-            width: 100%;
-            object-fit: cover;
-        }
-    .card__list {
-        padding-left: 1rem;
-    }    
-    .card__title {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-    .card__text {
-        margin-bottom: 1rem;
-        p {
-            margin-top: 1rem;
-        }
-    }
-    }
+// @media screen and (max-width: 1026px) {
+//     .directions {
+//         max-width: 858px;
+//     }
+//     .directions__title {
+//         margin-top: 2rem;
+//         margin-bottom: 1.5rem;
+//         font-size: 2.3rem;
+//     }
+//     .directions__cards {
+//         // font-size: 1.3rem;
+//         margin-bottom: 1rem;
+//         // line-height: 1.5rem;
+//     }
+//     .card__box {
+//         max-width: 390px;
+//         padding: 1rem;
+//         margin-bottom: 1rem;
+//         img {
+//             width: 100%;
+//             object-fit: cover;
+//         }
+//     .card__list {
+//         padding-left: 1rem;
+//     }    
+//     .card__title {
+//         margin-top: 1rem;
+//         margin-bottom: 1rem;
+//     }
+//     .card__text {
+//         margin-bottom: 1rem;
+//         p {
+//             margin-top: 1rem;
+//         }
+//     }
+//     }
 
-    // Кнопка "Записаться на бесплатное занятие" из раздела "Направления"
-    .directions__btn {
-        width: 100%;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-    .signup__btn {
-        font-size: 25px;
-        padding: 1.3rem 1.5rem;
-    }
-}
+//     // Кнопка "Записаться на бесплатное занятие" из раздела "Направления"
+//     .directions__btn {
+//         width: 100%;
+//         padding-left: 2rem;
+//         padding-right: 2rem;
+//     }
+//     .signup__btn {
+//         font-size: 25px;
+//         padding: 1.3rem 1.5rem;
+//     }
+// }
 
 @media screen and (max-width: 426px) {
     .directions {
@@ -790,7 +790,11 @@ input[name="r"] {
     text-align: center; /* Выравниваем кнопку по центру */
     padding: 20px; /* Добавляем отступ сверху и снизу для кнопки */
   }
-  
+  .button-container a {
+    font-family: Montserrat-Medium;
+    font-size: 35px;
+    border-radius: 60px;
+  }
   .image-section {
     width: 50%; /* Задаем ширину блока с изображением */
     display: flex;
