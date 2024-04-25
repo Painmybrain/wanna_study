@@ -40,7 +40,7 @@ main {
 }
 
 .directions {
-  max-width: 1440px;
+  max-width: 1600px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -490,7 +490,7 @@ input[name=r] {
   }
   .feedbacks__title {
     margin-left: 10%;
-    font-size: 2.3rem;
+    font-size: 50px;
   }
   .slides {
     height: 100%;
@@ -510,6 +510,7 @@ input[name=r] {
 }
 @media screen and (max-width: 520px) {
   .feedbacks {
+    max-width: 520px;
     height: 60rem;
   }
   .slider {
@@ -517,8 +518,9 @@ input[name=r] {
     overflow: hidden;
   }
   .feedbacks__title {
-    margin-left: 10%;
-    font-size: 50px;
+    margin-left: 0;
+    font-size: 45px;
+    text-align: center;
   }
   .slide__img img {
     min-width: 360px;
@@ -526,6 +528,9 @@ input[name=r] {
   }
   .slide_navigation {
     bottom: 3rem;
+    right: 25%;
+    display: flex;
+    transform: translateX(-50%);
   }
 }
 .promo {
@@ -662,13 +667,8 @@ input[name=r] {
   padding-bottom: 40px;
 }
 
-.study-club-title {
-  text-align: left; /* Выравнивание текста по краю */
-  font-size: 36px; /* Большой размер шрифта */
-  font-weight: bold; /* Жирный текст */
-  align-items: center;
-  padding-top: 30px;
-  padding-bottom: 20px;
+.logo-container {
+  margin-right: 20px; /* Отступ справа от логотипа */
 }
 
 .logo-container {
@@ -678,16 +678,32 @@ input[name=r] {
 }
 
 .logo-container img {
-  width: 220px;
-  height: 220px;
+  width: 210px;
+  height: 210px;
   padding-top: 0px;
+}
+
+.study-club-title {
+  text-align: left; /* Выравнивание текста по краю */
+  font-size: 36px; /* Большой размер шрифта */
+  font-weight: bold; /* Жирный текст */
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 .navigation1 {
   display: flex;
-  margin: 25px;
+  align-items: center;
+  margin-bottom: 30px;
   text-decoration: none;
-  padding-top: 0px;
+  padding-left: 30px;
+}
+
+.navigation1 {
+  display: flex;
+  margin-right: 10px;
+  align-items: baseline;
 }
 
 .navigation1 a {
@@ -704,32 +720,18 @@ input[name=r] {
   color: #0f9437;
 }
 
+.navigation1 img {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
 .no-underline, .no-underline:hover, .no-underline:visited {
   text-decoration: none;
-  font-weight: 50px;
+  font-weight: bold;
   display: flex;
   font-size: 24px;
   color: #1576bd;
-}
-
-.contact-icons {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-  text-decoration: none;
-  padding-left: 30 px;
-}
-
-.icon-links {
-  display: flex;
-  margin-right: 10px;
-  align-items: center;
-}
-
-.icon-links img {
-  width: 24px;
-  height: 24px;
-  margin-right: 20px;
 }
 
 .menu__burger {
@@ -785,15 +787,6 @@ input[name=r] {
   font-size: 30px;
 }
 
-@media screen and (max-width: 520px) {
-  .feedbacks__title {
-    font-size: 50px;
-  }
-  .slide__img img {
-    min-width: 340px;
-    height: 30%;
-  }
-}
 .footer {
   background-color: #1572c2;
   color: white;
@@ -808,11 +801,13 @@ input[name=r] {
 .footer__links {
   display: flex;
   align-items: center;
+  flex-direction: row;
 }
 
 .contact-icons {
   display: flex;
   align-items: center;
+  flex-direction: row;
 }
 
 .contact-icons img {
@@ -925,10 +920,10 @@ input[name=r] {
   .navigation1, .header__contact {
     display: none;
   }
-  .header__logo {
+  .logo-container {
     z-index: 5;
     padding: 0;
-    width: 107px;
+    padding-left: 1.5rem;
   }
   .header__nav {
     display: none;
@@ -978,7 +973,7 @@ input[name=r] {
   .burger-checkbox:checked + .burger::before {
     top: 11px;
     transform: rotate(45deg);
-    box-shadow: 0 6px 0 #1576bd;
+    box-shadow: 0px 0 #1576bd;
     transition: box-shadow 0.15s, top 0.3s, transform 0.3s 0.15s;
   }
   .burger-checkbox:checked + .burger::after {
@@ -994,13 +989,12 @@ input[name=r] {
     bottom: 0;
     z-index: 4;
     list-style: none;
-    padding: 5rem 3rem 0 3rem;
+    padding: 13rem 3rem 0 3rem;
     margin: 0;
     display: none;
-    background: #127830;
+    background: rgb(205, 235, 223);
     text-align: center;
     overflow: auto;
-    box-shadow: 0 8px 16px #1576bd;
   }
   .burger-checkbox:checked ~ .menu-list {
     display: block;
@@ -1008,29 +1002,17 @@ input[name=r] {
   .menu-item {
     display: block;
     padding: 20px;
-    border-bottom: 1px solid #ccc;
-    color: rgb(255, 255, 255);
+    border-bottom: 1px solid #bbcfcd;
+    color: #1576bd;
     text-decoration: none;
     font-size: 20px;
   }
   .menu-item:hover {
-    background: rgb(153, 161, 142);
+    background: rgb(155, 206, 206);
   }
-  .burger__phone {
-    margin: auto;
-    margin-top: 5rem;
-    padding: 15px 15px;
-    color: rgb(255, 255, 255);
-    border: none;
-    text-align: center;
-    font-size: 24px;
+  .image-section {
+    display: none;
   }
-  .burger__consult {
-    border: none;
-    padding: 20px 0;
-  }
-}
-@media screen and (max-width: 520px) and (max-width: 520px) {
   .footer {
     height: auto; /* Для автоматического растяжения футера в зависимости от контента */
   }
