@@ -44,7 +44,7 @@ main{
 // Раздел "Направления" с карточками
 
 .directions {
-    max-width: 1600px;
+    max-width: 1440px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -57,7 +57,7 @@ main{
     color: rgba(22, 119, 189, 1);
     font-family: Montserrat-SemiBold;
     font-weight: 600;
-    font-size: 35px;
+    font-size: 50px;
     // line-height: 7rem;
 }
 .directions__cards {
@@ -67,7 +67,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     color: rgba(255, 255, 255, 1);
     // line-height: 2rem;
 }
@@ -137,7 +137,7 @@ main{
         // line-height: 1.5rem;
     }
     .card__box {
-        max-width: 254px;
+        max-width: 390px;
         padding: 1rem;
         margin-bottom: 1rem;
         img {
@@ -241,7 +241,7 @@ main{
 .teachers__title {
     margin-bottom: 35px;
     font-family: Montserrat-SemiBold;
-    font-size: 70px;
+    font-size: 50px;
     text-align: left;
     color: #1677BD;
 }
@@ -430,7 +430,7 @@ main{
     color: rgba(22, 119, 189, 1);
     font-family: Montserrat-SemiBold;
     font-weight: 600;
-    font-size: 70px;    
+    font-size: 50px;    
 }
 
 .slider {     
