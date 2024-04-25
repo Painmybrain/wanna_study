@@ -167,6 +167,7 @@ main {
     padding-right: 2rem;
   }
   .signup__btn {
+    font-size: 25px;
     padding: 1.3rem 1.5rem;
   }
 }
@@ -188,6 +189,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 13px;
     margin-bottom: 1rem;
   }
   .card__box {
@@ -223,6 +225,7 @@ main {
   }
   .signup__btn {
     margin: 0.1rem;
+    font-size: 20px;
     padding: 1rem 1.2rem;
   }
 }
