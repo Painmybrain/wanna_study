@@ -537,11 +537,11 @@ input[name=r] {
   }
   .promo__maintext-first {
     font-size: 25px;
-    line-height: 15px;
+    line-height: 25px;
   }
   .promo__maintext-second {
     font-size: 25px;
-    line-height: 15px;
+    line-height: 25px;
   }
 }
 .contacts {
@@ -579,6 +579,7 @@ input[name=r] {
   width: 654px;
   height: 431px;
   max-width: 100%;
+  max-height: 100%;
 }
 
 .contacts__adress-titles {
@@ -605,11 +606,11 @@ input[name=r] {
   }
   .contacts__adress-titles {
     font-size: 30px;
-    line-height: 10px;
+    line-height: 25px;
   }
   .contacts__adress-main {
     font-size: 25px;
-    line-height: 10px;
+    line-height: 25px;
   }
 }
 .site-container {
