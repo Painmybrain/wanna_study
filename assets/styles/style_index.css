@@ -533,15 +533,15 @@ input[name=r] {
 
 @media screen and (max-width: 426px) {
   .promo__title {
-    font-size: 25px;
+    font-size: 45px;
   }
   .promo__maintext-first {
-    font-size: 15px;
-    line-height: 10px;
+    font-size: 25px;
+    line-height: 15px;
   }
   .promo__maintext-second {
-    font-size: 15px;
-    line-height: 10px;
+    font-size: 25px;
+    line-height: 15px;
   }
 }
 .contacts {
@@ -570,14 +570,15 @@ input[name=r] {
 
 .contacts__map {
   margin-left: 4%;
-  padding-top: 10%;
-  padding-bottom: 20%;
+  padding-bottom: 10%;
+  padding-top: 5%;
   padding-right: 15%;
 }
 
 .contacts__photo {
   width: 654px;
   height: 431px;
+  max-width: 100%;
 }
 
 .contacts__adress-titles {
@@ -598,6 +599,19 @@ input[name=r] {
   font-size: 20px;
 }
 
+@media screen and (max-width: 426px) {
+  .contacts__title {
+    font-size: 45px;
+  }
+  .contacts__adress-titles {
+    font-size: 30px;
+    line-height: 10px;
+  }
+  .contacts__adress-main {
+    font-size: 25px;
+    line-height: 10px;
+  }
+}
 .site-container {
   display: flex;
   flex-direction: column; /* Колонный флекс */
