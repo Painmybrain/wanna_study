@@ -214,7 +214,7 @@ main{
     align-items: center;
     flex-direction: column;
     max-width: 390px;
-    height: 850px;
+    height: 690px;
     padding: 15px;
     background-color: rgb(198, 231, 218, 0.5);
     border-radius: 25px;
@@ -232,9 +232,9 @@ main{
     flex: 1 250px;
 }
 
-.teachers__pic {
+.teachers__pic1, .teachers__pic2, .teachers__pic3 {
     width: 345px;
-    height: 493px;
+    height: 415px;
     object-fit: cover;
     border-radius: 25px;
 }
