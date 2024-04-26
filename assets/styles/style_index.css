@@ -33,6 +33,8 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 main {
@@ -698,7 +700,7 @@ input[name=r] {
 }
 
 .navigation1 a:hover {
-  font-size: 30px;
+  transform: scale(1.1);
   color: #0f9437;
 }
 
@@ -708,7 +710,7 @@ input[name=r] {
   margin-right: 5px;
 }
 
-.no-underline, .no-underline:hover, .no-underline:visited {
+.no-underline, .no-underline:visited {
   text-decoration: none;
   font-weight: bold;
   display: flex;
@@ -829,6 +831,7 @@ input[name=r] {
   .header {
     flex-direction: column; /* Выравниваем элементы по вертикали */
     align-items: center; /* Центрируем элементы */
+    padding-left: 0;
   }
   .logo-container img {
     width: 180px; /* Уменьшаем размер логотипа */
@@ -878,28 +881,24 @@ input[name=r] {
   .button-container {
     padding: 20px 0; /* Увеличиваем верхний и нижний отступы */
   }
+  .footer {
+    height: auto; /* Для автоматического растяжения футера в зависимости от контента */
+  }
+  .footer__links {
+    grid-column: auto; /* Отменяем жестко заданное положение */
+    grid-row: auto; /* Отменяем жестко заданное положение */
+    justify-self: auto; /* Отменяем жестко заданное положение */
+    text-align: center;
+  }
+  .icon-links {
+    margin-top: 1rem; /* Добавляем отступ между иконками и текстом */
+  }
+  .footer__confidential {
+    padding-top: 2rem; /* Уменьшаем верхний отступ */
+    text-align: center; /* Выравниваем текст по центру */
+    font-size: 14px; /* Уменьшаем размер шрифта */
+  }
 }
-.footer {
-  height: auto; /* Для автоматического растяжения футера в зависимости от контента */
-}
-
-.footer__links {
-  grid-column: auto; /* Отменяем жестко заданное положение */
-  grid-row: auto; /* Отменяем жестко заданное положение */
-  justify-self: auto; /* Отменяем жестко заданное положение */
-  text-align: center;
-}
-
-.icon-links {
-  margin-top: 1rem; /* Добавляем отступ между иконками и текстом */
-}
-
-.footer__confidential {
-  padding-top: 2rem; /* Уменьшаем верхний отступ */
-  text-align: center; /* Выравниваем текст по центру */
-  font-size: 14px; /* Уменьшаем размер шрифта */
-}
-
 /* Adaptive phone */
 @media screen and (max-width: 520px) {
   .navigation1, .header__contact {
