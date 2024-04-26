@@ -774,7 +774,8 @@ input[name=r] {
   justify-content: space-between;
   align-items: center;
   font-family: "Montserrat-SemiBold", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 .footer__links {
@@ -792,19 +793,21 @@ input[name=r] {
 .contact-icons img {
   width: 46px;
   height: 46px;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
 }
 
 .icon-links {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 .footer a {
   color: azure;
   display: fixed;
   margin-block-start: 10px;
+  padding-right: 5px;
   text-decoration: none;
 }
 
@@ -1003,16 +1006,28 @@ input[name=r] {
     padding: 1rem 1.2rem;
   }
   .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
     height: auto; /* Для автоматического растяжения футера в зависимости от контента */
   }
   .footer__links {
-    grid-column: auto; /* Отменяем жестко заданное положение */
-    grid-row: auto; /* Отменяем жестко заданное положение */
-    justify-self: auto; /* Отменяем жестко заданное положение */
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .contact-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-top: 12%;
+    padding-left: 6%;
   }
   .icon-links {
-    margin-top: 1rem; /* Добавляем отступ между иконками и текстом */
+    margin: 0 auto;
+    margin-bottom: 5%;
+    padding-left: 3%;
+    padding-bottom: 3%;
   }
   .footer__confidential {
     padding-top: 2rem; /* Уменьшаем верхний отступ */
