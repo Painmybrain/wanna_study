@@ -49,6 +49,7 @@ main {
 }
 
 .directions__title {
+  margin: 0 auto;
   margin-top: 3rem;
   margin-bottom: 2rem;
   color: rgb(22, 119, 189);
@@ -136,6 +137,7 @@ main {
     max-width: 100%;
     margin-top: 1.6rem;
     margin-bottom: 1.2rem;
+    font-size: 45px;
     padding-left: 1rem;
   }
   .directions__cards {
@@ -987,6 +989,16 @@ input[name=r] {
   }
   .image-section {
     display: none;
+  }
+  .button-container {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .button-container a {
+    font-size: 20px;
+    margin: 0.1rem;
+    padding: 1rem 1.2rem;
   }
   .footer {
     height: auto; /* Для автоматического растяжения футера в зависимости от контента */

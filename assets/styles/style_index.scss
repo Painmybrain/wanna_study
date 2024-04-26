@@ -52,6 +52,7 @@ main{
     padding: 0 2rem;
 }
 .directions__title {
+  margin: 0 auto;
     margin-top: 3rem;
     margin-bottom: 2rem;
     color: rgba(22, 119, 189, 1);
@@ -121,56 +122,6 @@ main{
     border-radius: 60px;
 }
 
-
-// @media screen and (max-width: 1026px) {
-//     .directions {
-//         max-width: 858px;
-//     }
-//     .directions__title {
-//         margin-top: 2rem;
-//         margin-bottom: 1.5rem;
-//         font-size: 2.3rem;
-//     }
-//     .directions__cards {
-//         // font-size: 1.3rem;
-//         margin-bottom: 1rem;
-//         // line-height: 1.5rem;
-//     }
-//     .card__box {
-//         max-width: 390px;
-//         padding: 1rem;
-//         margin-bottom: 1rem;
-//         img {
-//             width: 100%;
-//             object-fit: cover;
-//         }
-//     .card__list {
-//         padding-left: 1rem;
-//     }    
-//     .card__title {
-//         margin-top: 1rem;
-//         margin-bottom: 1rem;
-//     }
-//     .card__text {
-//         margin-bottom: 1rem;
-//         p {
-//             margin-top: 1rem;
-//         }
-//     }
-//     }
-
-//     // Кнопка "Записаться на бесплатное занятие" из раздела "Направления"
-//     .directions__btn {
-//         width: 100%;
-//         padding-left: 2rem;
-//         padding-right: 2rem;
-//     }
-//     .signup__btn {
-//         font-size: 25px;
-//         padding: 1.3rem 1.5rem;
-//     }
-// }
-
 @media screen and (max-width: 426px) {
     .directions {
         max-width: 100%;
@@ -181,7 +132,7 @@ main{
         max-width: 100%;
         margin-top: 1.6rem;
         margin-bottom: 1.2rem;
-        // font-size: 2rem;
+        font-size: 45px;
         padding-left: 1rem;
     }
     .directions__cards {
@@ -1065,8 +1016,18 @@ input[name="r"] {
     // Убирает картинку в моб версии
     .image-section {
         display: none;
-    }    
-    
+    }   
+    .button-container {
+      width: 100%;
+      padding-left: 1rem;
+      padding-right: 1rem;
+  }
+  
+    .button-container a {
+      font-size: 20px;
+      margin: 0.1rem;
+      padding: 1rem 1.2rem;
+    }
       .footer {
         height: auto; /* Для автоматического растяжения футера в зависимости от контента */
       }
