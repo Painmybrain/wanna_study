@@ -42,7 +42,6 @@ main{
 }
 
 
-
 // Раздел "Направления" с карточками
 
 .directions {
@@ -85,10 +84,15 @@ main{
         border-radius: 30px;
     }
 }
-.card__title {
+.card__title, .card__title-en {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+
+.card__title-en {
+  width: 60%;
+}
+
 .card__text {
     margin-bottom: 1rem;
     p {
@@ -159,7 +163,7 @@ main{
     .card__list {
         padding-left: 1rem;
     }    
-    .card__title {
+    .card__title, .card__title-en {
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
@@ -295,6 +299,10 @@ main{
     font-family: Montserrat-Regular;
     font-size: 20px;
     text-align: left;
+}
+
+.prepositions {
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 426px) {
@@ -547,6 +555,12 @@ input[name="r"] {
 .maintext__bold{
     font-family: Montserrat-SemiBold;
 }
+
+.prepositions__bold {
+  white-space: nowrap;
+  font-family: Montserrat-SemiBold;
+}
+
 @media screen and (max-width: 426px){
   .promo__title {font-size: 45px;
 }
@@ -611,7 +625,7 @@ input[name="r"] {
     padding-bottom: 5%;
 }
 .contacts__adress-bold{
-    font-size: 25px;
+    font-size: 20px;
 }
 @media screen and (max-width: 426px){
   .contacts__title {font-size: 45px;
@@ -624,6 +638,9 @@ input[name="r"] {
   font-size: 25px;
   line-height:25px;}
 
+  .contacts__map {
+    height: 50vh;
+  }
 }
 
 //  ХЭДЕР И ФУТЕР
@@ -677,7 +694,8 @@ input[name="r"] {
     padding-bottom: 20px;    
   }
   
-  .study-club_text { 
+  .study-club_text {
+    width: 70%; 
     font-family: Montserrat-SemiBold;
     font-size: 22px;  
     padding-bottom: 30px;
@@ -804,11 +822,14 @@ input[name="r"] {
     align-items: center;
     flex-direction: row;
   }
+
+  .footer__address {
+    width: 30%;
+  }
     
   .contact-icons {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   
   .contact-icons img {
@@ -823,6 +844,11 @@ input[name="r"] {
     margin-bottom: 20px;
     margin-right: 20px;
   }
+
+  .icon-links a:hover {
+    transform: scale(1.1);
+    color: #11b041;
+  }
   
   .footer a {
     color: azure;
@@ -836,6 +862,7 @@ input[name="r"] {
   .footer a .icon-links {
     position: relative; /* или relative, fixed, sticky */
   }
+
   /*# sourceMappingURL=style_index.css.map */
   @media screen and (max-width: 1026px) {
     .site-container {
@@ -927,7 +954,9 @@ input[name="r"] {
     text-align: center;
   }
 
- 
+  .footer__address {
+    width: 40%;
+  }
   
   .icon-links {
     margin-top: 1rem; /* Добавляем отступ между иконками и текстом */
@@ -945,6 +974,10 @@ input[name="r"] {
     .navigation1, .header__contact {
       display: none;
     }
+
+    .prepositions_mobile {
+  white-space: nowrap;
+}
 
     .header {
       padding: 0;
@@ -1109,6 +1142,10 @@ input[name="r"] {
         justify-items: center;
         text-align: center;
         height: auto; /* Для автоматического растяжения футера в зависимости от контента */
+      }
+
+      .footer__address {
+        width: 100%;
       }
     
       .footer__links {
