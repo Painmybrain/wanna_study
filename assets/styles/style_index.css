@@ -693,6 +693,7 @@ input[name=r] {
 
 .navigation1 {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 30px;
   text-decoration: none;
@@ -720,8 +721,8 @@ input[name=r] {
 }
 
 .navigation1 img {
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   margin-right: 5px;
 }
 
