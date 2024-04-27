@@ -637,6 +637,10 @@ input[name=r] {
     font-size: 25px;
     line-height: 25px;
   }
+  .contacts__photo {
+    width: 640px;
+    height: 311px;
+  }
 }
 .site-container {
   display: flex;
@@ -770,8 +774,8 @@ input[name=r] {
 .image-section img {
   text-align: end;
   margin-block-end: 0%;
-  max-width: 500px; /* Уменьшаем изображение, чтобы оно не выходило за пределы своего блока */
-  height: 400px;
+  width: 516px; /* Уменьшаем изображение, чтобы оно не выходило за пределы своего блока */
+  height: 353px;
   border-radius: 50px; /* Добавление закругленных углов */
 }
 
