@@ -33,8 +33,8 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    max-width: 1440px;
-    margin: 0 auto;
+    // max-width: 1440px;
+    // margin: 0 auto;
 }
 
 main{
@@ -208,6 +208,8 @@ main{
 // Раздел "Педагоги"
 .teachers {
     padding: 140px 75px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .teachers__title {
@@ -388,13 +390,19 @@ main{
 
 
 // Отзывы - слайдер
+.feedbacks__background {
+  background-color: rgb(198, 231, 218, 0.5);
+}
+
 .feedbacks {
     position: relative;
     display: flex;
     flex-direction: column;
+    max-width: 1440px;
+    margin: 0 auto;
     margin-top: 126px;
     min-height: 40rem;
-    background-color: rgb(198, 231, 218, 0.5);
+    // background-color: rgb(198, 231, 218, 0.5);
 }
 
 .feedbacks__title {
@@ -529,15 +537,21 @@ input[name="r"] {
 
 
 // Раздел "Акции"
-.promo{
+
+// поменяла местами стили для promo и promo__image-background (чтобы задать ширину контента)
+.promo{ 
+  background-image: url("../pictures/promo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100vw;
     font-family: Montserrat-Regular; 
     padding-top: 5%;
 }
-.promo__image-background{
-    background-image: url("../pictures/promo.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 100vw;}
+
+.promo__image-background{   
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 
 .promo__title{
     color: rgba(22, 119, 189, 1);
@@ -582,7 +596,8 @@ input[name="r"] {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
     padding-top: 7%;
 }
 .contacts__title
@@ -647,10 +662,12 @@ input[name="r"] {
 //  ХЭДЕР И ФУТЕР
 .site-container {
     display: flex;
-    flex-direction: column; /* Колонный флекс */
+    flex-direction: column; /* Колонный флекс */    
     font-family: Montserrat-SemiBold;
     padding-top: 30px;
+    margin: 0 auto;
     margin-block-start: 0%;
+    max-width: 1440px;
   }
   
   .background-container1 {
@@ -708,7 +725,7 @@ input[name="r"] {
     padding-bottom: 30px;
   }
 
-.navigation1 {   
+  .navigation1 {   
     display: flex; 
     flex-wrap: wrap;
     align-items: center; 
@@ -761,6 +778,8 @@ input[name="r"] {
     padding: 5px;
     background-color: transparent;
     font-size: 30px;
+    max-width: 1440px;
+    margin: 0 auto;
   }
   
   .text-section {
@@ -783,6 +802,8 @@ input[name="r"] {
   .button-container {
     text-align: center; /* Выравниваем кнопку по центру */
     padding: 20px; /* Добавляем отступ сверху и снизу для кнопки */
+    max-width: 1440px;
+    margin: 0 auto;
   }
   .button-container a {
     font-family: Montserrat-Medium;
@@ -806,8 +827,14 @@ input[name="r"] {
     font-size: 30px;
   }
     
-  .footer {
+  // footer
+  .footer__background {
     background-color: #1572c2;
+  }
+
+
+  .footer {
+    
     color: white;
     padding: 1rem;
     display: flex;
@@ -816,6 +843,8 @@ input[name="r"] {
     font-family: 'Montserrat-SemiBold', sans-serif;
     font-size: 20px;
     line-height: 1.5;
+    max-width: 1440px;
+    margin: 0 auto;
   }
   
   .footer__links {
