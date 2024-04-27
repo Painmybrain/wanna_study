@@ -133,14 +133,15 @@ main {
   .directions {
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 1rem;
+    justify-content: center;
   }
   .directions__title {
     max-width: 100%;
+    font-size: 2.5rem;
+    margin: 0 auto;
     margin-top: 1.6rem;
     margin-bottom: 1.2rem;
-    font-size: 45px;
-    padding-left: 1rem;
+    padding-left: 0;
   }
   .directions__cards {
     max-width: 100%;
