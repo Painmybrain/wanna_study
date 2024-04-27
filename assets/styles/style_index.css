@@ -85,13 +85,9 @@ main {
   border-radius: 30px;
 }
 
-.card__title, .card__title-en {
+.card__title {
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-
-.card__title-en {
-  width: 60%;
 }
 
 .card__text {
@@ -133,6 +129,20 @@ main {
   border-radius: 60px;
 }
 
+@media screen and (max-width: 1027px) {
+  .directions__title {
+    margin: 0 auto;
+    margin-top: 1.6rem;
+    margin-bottom: 1.2rem;
+    font-size: 3rem;
+    padding-left: 0;
+  }
+  .signup__btn {
+    margin: 0 auto;
+    max-width: 95%;
+    font-size: 30px; /* Увеличиваем верхний и нижний отступы */
+  }
+}
 @media screen and (max-width: 426px) {
   .directions {
     max-width: 100%;
@@ -169,7 +179,7 @@ main {
   .card__box .card__list {
     padding-left: 1rem;
   }
-  .card__box .card__title, .card__box .card__title-en {
+  .card__box .card__title {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
@@ -302,10 +312,6 @@ main {
   font-family: Montserrat-Regular;
   font-size: 20px;
   text-align: left;
-}
-
-.prepositions {
-  white-space: nowrap;
 }
 
 @media screen and (max-width: 426px) {
@@ -542,11 +548,6 @@ input[name=r] {
   font-family: Montserrat-SemiBold;
 }
 
-.prepositions__bold {
-  white-space: nowrap;
-  font-family: Montserrat-SemiBold;
-}
-
 @media screen and (max-width: 426px) {
   .promo__title {
     font-size: 45px;
@@ -613,7 +614,7 @@ input[name=r] {
 }
 
 .contacts__adress-bold {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 @media screen and (max-width: 426px) {
@@ -627,9 +628,6 @@ input[name=r] {
   .contacts__adress-main {
     font-size: 25px;
     line-height: 25px;
-  }
-  .contacts__map {
-    height: 50vh;
   }
 }
 .site-container {
@@ -682,7 +680,6 @@ input[name=r] {
 }
 
 .study-club_text {
-  width: 70%;
   font-family: Montserrat-SemiBold;
   font-size: 22px;
   padding-bottom: 30px;
@@ -742,14 +739,14 @@ input[name=r] {
 
 .container {
   display: flex;
-  justify-content: space-between; /* Распределение контента по ширине */
-  padding: 20px;
+  justify-content: center; /* Распределение контента по ширине */
+  padding: 5px;
   background-color: transparent;
   font-size: 30px;
 }
 
 .text-section {
-  width: 60%; /* Задаем ширину текстового блока */
+  width: 80%; /* Задаем ширину текстового блока */
   padding: 20px;
   color: #1572c2;
   padding-left: 90px;
@@ -776,10 +773,9 @@ input[name=r] {
 }
 
 .image-section {
-  width: 50%; /* Задаем ширину блока с изображением */
+  width: 80%; /* Задаем ширину блока с изображением */
   display: flex;
-  margin: 20px;
-  padding-left: 90px;
+  margin: 5px;
 }
 
 .free-lesson-button {
@@ -810,13 +806,10 @@ input[name=r] {
   flex-direction: row;
 }
 
-.footer__address {
-  width: 30%;
-}
-
 .contact-icons {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
 
 .contact-icons img {
@@ -830,11 +823,6 @@ input[name=r] {
   align-items: center;
   margin-bottom: 20px;
   margin-right: 20px;
-}
-
-.icon-links a:hover {
-  transform: scale(1.1);
-  color: #11b041;
 }
 
 .footer a {
@@ -905,7 +893,21 @@ input[name=r] {
     display: block; /* Убираем пробелы между изображением и его контейнером */
   }
   .button-container {
-    padding: 20px 0; /* Увеличиваем верхний и нижний отступы */
+    margin: 0 auto;
+    max-width: 95%;
+    padding: 20px 0;
+  }
+  .button-container a {
+    font-size: 30px; /* Увеличиваем верхний и нижний отступы */
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container img {
+    max-width: 400px;
+    max-height: 250px;
   }
   .footer {
     height: auto; /* Для автоматического растяжения футера в зависимости от контента */
@@ -915,9 +917,6 @@ input[name=r] {
     grid-row: auto; /* Отменяем жестко заданное положение */
     justify-self: auto; /* Отменяем жестко заданное положение */
     text-align: center;
-  }
-  .footer__address {
-    width: 40%;
   }
   .icon-links {
     margin-top: 1rem; /* Добавляем отступ между иконками и текстом */
@@ -932,9 +931,6 @@ input[name=r] {
 @media screen and (max-width: 520px) {
   .navigation1, .header__contact {
     display: none;
-  }
-  .prepositions_mobile {
-    white-space: nowrap;
   }
   .header {
     padding: 0;
@@ -1081,9 +1077,6 @@ input[name=r] {
     justify-items: center;
     text-align: center;
     height: auto; /* Для автоматического растяжения футера в зависимости от контента */
-  }
-  .footer__address {
-    width: 100%;
   }
   .footer__links {
     display: grid;
