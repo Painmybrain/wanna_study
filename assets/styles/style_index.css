@@ -39,6 +39,10 @@ main {
   width: 100%;
 }
 
+.prepositions {
+  white-space: nowrap;
+}
+
 .directions {
   max-width: 1440px;
   display: flex;
@@ -83,9 +87,13 @@ main {
   border-radius: 30px;
 }
 
-.card__title {
+.card__title, .card__title-en {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.card__title-en {
+  width: 60%;
 }
 
 .card__text {
@@ -555,6 +563,11 @@ input[name=r] {
   font-family: Montserrat-SemiBold;
 }
 
+.prepositions__bold {
+  white-space: nowrap;
+  font-family: Montserrat-SemiBold;
+}
+
 @media screen and (max-width: 426px) {
   .promo__title {
     font-size: 45px;
@@ -622,7 +635,7 @@ input[name=r] {
 }
 
 .contacts__adress-bold {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 426px) {
@@ -640,6 +653,9 @@ input[name=r] {
   .contacts__photo {
     width: 640px;
     height: 311px;
+  }
+  .contacts__map {
+    height: 50vh;
   }
 }
 .site-container {
@@ -695,6 +711,7 @@ input[name=r] {
 }
 
 .study-club_text {
+  width: 60%;
   font-family: Montserrat-SemiBold;
   font-size: 22px;
   padding-bottom: 30px;
@@ -835,10 +852,13 @@ input[name=r] {
   flex-direction: row;
 }
 
+.footer__address {
+  width: 30%;
+}
+
 .contact-icons {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .contact-icons img {
@@ -852,6 +872,11 @@ input[name=r] {
   align-items: center;
   margin-bottom: 20px;
   margin-right: 20px;
+}
+
+.icon-links a:hover {
+  transform: scale(1.1);
+  color: #11b041;
 }
 
 .footer a {
@@ -947,6 +972,9 @@ input[name=r] {
     justify-self: auto; /* Отменяем жестко заданное положение */
     text-align: center;
   }
+  .footer__address {
+    width: 40%;
+  }
   .icon-links {
     margin-top: 1rem; /* Добавляем отступ между иконками и текстом */
   }
@@ -960,6 +988,9 @@ input[name=r] {
 @media screen and (max-width: 520px) {
   .navigation1, .header__contact {
     display: none;
+  }
+  .prepositions_mobile {
+    white-space: nowrap;
   }
   .header {
     padding: 0;
@@ -1106,6 +1137,9 @@ input[name=r] {
     justify-items: center;
     text-align: center;
     height: auto; /* Для автоматического растяжения футера в зависимости от контента */
+  }
+  .footer__address {
+    width: 100%;
   }
   .footer__links {
     display: grid;
