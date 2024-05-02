@@ -647,8 +647,7 @@ input[name=r] {
     line-height: 25px;
   }
   .contacts__photo {
-    width: 640px;
-    height: 311px;
+    display: none;
   }
   .contacts__map {
     height: 50vh;
